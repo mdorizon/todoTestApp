@@ -51,7 +51,7 @@ jobs:
           gcloud builds submit --tag gcr.io/methodo-app-455608/react-app
       - name: Deploy to Google Cloud Run
         run: |
-          gcloud run deploy methodo-app-455608 \
+          gcloud run deploy methodo-app \
             --image gcr.io/methodo-app-455608/react-app \
             --platform managed \
             --allow-unauthenticated \
